@@ -4,99 +4,100 @@
   <meta charset="UTF-8">
   <title>GaraelMC - Tienda Oficial</title>
   <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background-color: #aaffaa;
-      background-image: radial-gradient(black 1px, transparent 1px);
-      background-size: 20px 20px;
-      color: white;
-    }
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #00a000;
+  background-image: radial-gradient(black 1px, transparent 1px);
+  background-size: 20px 20px;
+  color: black; /* ← letras negras en toda la página */
+}
 
-    header {
-      background-color: #000;
-      padding: 20px;
-      text-align: center;
-    }
+header {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
 
-    header h1 {
-      font-size: 48px;
-      color: #00ff00;
-      margin: 0;
-    }
+header h1 {
+  font-size: 48px;
+  color: #00ff00;
+  margin: 0;
+}
 
-    nav {
-      background-color: #111;
-      display: flex;
-      justify-content: center;
-      padding: 10px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
+nav {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      gap: 30px;
-    }
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
 
-    nav li {
-      position: relative;
-    }
+nav li {
+  position: relative;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      padding: 10px 15px;
-      background-color: #00ff00;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 15px;
+  background-color: #00ff00;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
 
-    nav a:hover {
-      background-color: #00cc00;
-    }
+nav a:hover {
+  background-color: #00cc00;
+}
 
-    .submenu {
-      display: none;
-      position: absolute;
-      top: 45px;
-      left: 0;
-      background-color: #222;
-      border: 2px solid #00ff00;
-      border-radius: 5px;
-      z-index: 1000;
-    }
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%; /* pegado justo debajo del botón */
+  left: 0;
+  margin-top: 0;
+  background-color: #222;
+  border: 2px solid #00ff00;
+  border-radius: 5px;
+  z-index: 1000;
+}
 
-    .submenu a {
-      display: block;
-      padding: 10px;
-      color: white;
-      background-color: #333;
-      border-bottom: 1px solid #00ff00;
-    }
+.submenu a {
+  display: block;
+  padding: 10px;
+  color: white;
+  background-color: #333;
+  border-bottom: 1px solid #00ff00;
+}
 
-    .submenu a:hover {
-      background-color: #00cc00;
-      color: black;
-    }
+.submenu a:hover {
+  background-color: #00cc00;
+  color: black;
+}
 
-    nav li:hover .submenu {
-      display: block;
-    }
+nav li:hover .submenu {
+  display: block;
+}
 
-    footer {
-      background-color: #000;
-      color: #00ff00;
-      text-align: center;
-      padding: 15px;
-      margin-top: 50px;
-      font-size: 16px;
-    }
+footer {
+  background-color: #000;
+  color: black; /* ← letras negras en el pie de página */
+  text-align: center;
+  padding: 15px;
+  margin-top: 50px;
+  font-size: 16px;
+}
   </style>
 </head>
 <body>
