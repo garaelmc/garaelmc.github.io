@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Rango Garaelito - GaraelMC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: url('fondo-minecraft.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    .contenedor {
+      max-width: 700px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 30px;
+      border-radius: 15px;
+      margin-top: 50px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 48px;
+      color: #00ff00;
+      margin-bottom: 20px;
+    }
+
+    .boton-titulo {
+      display: block;
+      background-color: #00ff00;
+      color: black;
+      font-weight: bold;
+      font-size: 32px;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 10px;
+      margin: 20px auto;
+      cursor: pointer;
+      text-align: center;
+      width: fit-content;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .volver {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      color: #00ff00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+
+  <!-- SDK de PayPal -->
+  <script src="https://www.paypal.com/sdk/js?client-id=BAAN07jINz3QI-5YRKj691438BG1KJXtlQ_2a1Iv0ECE4MhRRn9BtavzrHI7a-7YheiY_iPiRT7JbC6f54&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
+</head>
+<body>
+
+  <div class="contenedor">
+    <h1>Rango Garaelito</h1>
+
+    <button class="boton-titulo">GARAELITO</button>
+
+    <p><strong>Precio:</strong> $1.00 USD</p>
+    <p>Este rango te da acceso a <strong>kits, efectos, mascotas, compañeros, comandos y mucho más</strong>.</p>
+    <p><strong>Nota:</strong> Escribe tu usuario de Minecraft o Discord al completar el pago.</p>
+
+    <label for="usuario">Tu usuario de Minecraft:</label>
+    <input type="text" id="usuario" placeholder="Ejemplo: Gabrielpro2013MC">
+
+    <div id="paypal-container-2BFX9N95XB46L" style="margin-top: 30px;"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "2BFX9N95XB46L",
+      }).render("#paypal-container-2BFX9N95XB46L");
+    </script>
+
+    <a href="index.html" class="volver">← Volver a la tienda principal</a>
+  </div>
+
+</body>
+</html>
