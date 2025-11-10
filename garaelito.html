@@ -72,6 +72,11 @@
       font-weight: bold;
     }
   </style>
+
+  <!-- SDK de PayPal -->
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAN07jINz3QI-5YRKj691438BG1KJXtlQ_2a1Iv0ECE4MhRRn9BtavzrHI7a-7YheiY_iPiRT7JbC6f54&components=hosted-buttons&disable-funding=venmo&currency=USD">
+  </script>
 </head>
 <body>
 
@@ -83,8 +88,8 @@
     <p><strong>Precio:</strong> $1.00 USD</p>
     <p>Este rango te da acceso a <strong>kits, efectos, mascotas, compañeros, comandos y mucho más</strong>.</p>
 
-    <!-- Botón de PayPal actualizado -->
-    <div>
+    <!-- Botón de PayPal embebido -->
+    <div style="margin-top: 30px;">
       <style>
         .pp-2BFX9N95XB46L {
           text-align: center;
@@ -111,6 +116,14 @@
         </section>
       </form>
     </div>
+
+    <!-- Botón de PayPal con SDK -->
+    <div id="paypal-container-2BFX9N95XB46L" style="margin-top: 30px;"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "2BFX9N95XB46L",
+      }).render("#paypal-container-2BFX9N95XB46L");
+    </script>
 
     <a href="index.html" class="volver">← Volver a la tienda principal</a>
   </div>

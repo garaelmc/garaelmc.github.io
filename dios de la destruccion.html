@@ -72,6 +72,11 @@
       font-weight: bold;
     }
   </style>
+
+  <!-- SDK de PayPal -->
+  <script 
+    src="https://www.paypal.com/sdk/js?client-id=BAAN07jINz3QI-5YRKj691438BG1KJXtlQ_2a1Iv0ECE4MhRRn9BtavzrHI7a-7YheiY_iPiRT7JbC6f54&components=hosted-buttons&disable-funding=venmo&currency=USD">
+  </script>
 </head>
 <body>
 
@@ -80,15 +85,11 @@
 
     <button class="boton-titulo">¡Desata tu poder!</button>
 
-    <p><strong>Precio:</strong> $2.50 USD</p>
+    <p><strong>Precio:</strong> $3.00 USD</p>
     <p>Un rango legendario que te convierte en una fuerza imparable dentro del universo de GaraelMC. Accede a habilidades exclusivas y destaca como una entidad divina.</p>
-    <p><strong>Nota:</strong> Escribe tu usuario de Minecraft o Discord al completar el pago.</p>
 
-    <label for="usuario">Tu usuario de Minecraft:</label>
-    <input type="text" id="usuario" placeholder="Ejemplo: Gabrielpro2013MC">
-
-    <!-- Botón de PayPal -->
-    <div>
+    <!-- Botón de PayPal embebido -->
+    <div style="margin-top: 30px;">
       <style>
         .pp-38TKHYZYREPQS {
           text-align: center;
@@ -115,6 +116,14 @@
         </section>
       </form>
     </div>
+
+    <!-- Botón de PayPal con SDK -->
+    <div id="paypal-container-38TKHYZYREPQS" style="margin-top: 30px;"></div>
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "38TKHYZYREPQS",
+      }).render("#paypal-container-38TKHYZYREPQS");
+    </script>
 
     <a href="index.html" class="volver">← Volver a la tienda principal</a>
   </div>
